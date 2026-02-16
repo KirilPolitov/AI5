@@ -15,3 +15,5 @@ if st.button("Check Book"):
     st.success("The book exists")
   else:
     st.error("THE BOOK DOESNT EXIST IDIOT!!!")
+    newBook = st.text_input("Add book")
+    books.append(newBook)
