@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Приложение")
+st.title("Библиотека")
 
 # Създаваме списък, ако още не съществува
 if "books" not in st.session_state:
