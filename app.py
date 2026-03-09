@@ -33,6 +33,14 @@ if st.button("Покажи всички книги"):
             st.write("Цена:", book["price"])
             st.write("-----")
 
+        # намиране на най-евтината книга
+        cheapest_book = min(st.session_state.books, key=lambda x: x["price"])
+
+        st.subheader("📉 Най-евтината книга")
+        st.write("Заглавие:", cheapest_book["title"])
+        st.write("Автор:", cheapest_book["author"])
+        st.write("Цена:", cheapest_book["price"])
+
 # Търсене по автор
 st.header("Търсене по автор")
 
