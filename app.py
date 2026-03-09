@@ -68,7 +68,7 @@ if st.button("Търси по име"):
     found = False
 
     for book in st.session_state.books:
-        if book["author"] == search_name:
+        if book["title"] == search_name:
             st.write("Заглавие:", book["title"])
             st.write("Автор:", book["author"])
             st.write("Цена:", book["price"])
