@@ -7,7 +7,7 @@ if "books" not in st.session_state:
     st.session_state.books = []
 
 # + Добавяне на книга
-st.header("+ Добави книга")
+st.header("Добави книга")
 
 title = st.text_input("Заглавие")
 author = st.text_input("Автор")
@@ -36,7 +36,7 @@ if st.button("Покажи всички книги"):
         # намиране на най-евтината книга
         cheapest_book = min(st.session_state.books, key=lambda x: x["price"])
 
-        st.subheader("📉 Най-евтината книга")
+        st.subheader("Най-евтината книга")
         st.write("Заглавие:", cheapest_book["title"])
         st.write("Автор:", cheapest_book["author"])
         st.write("Цена:", cheapest_book["price"])
